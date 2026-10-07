@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0d0f12">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="90 Day Reset">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<link rel="icon" type="image/png" href="icon-192.png">
+<title>90 Day Reset</title>
+<style>
+:root{--bg:#0d0f12;--card:#17191e;--card2:#1e2229;--line:#2a2e37;--text:#f6f7f9;--muted:#9297a4;--lime:#bdf56d;--blue:#71c7ff;--orange:#ffbd67;--red:#ff8585}*{box-sizing:border-box}body{margin:0;color:var(--text);background:radial-gradient(circle at 85% 0,#28351f 0,#121419 28%,var(--bg) 62%);background-color:var(--bg);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}.wrap{max-width:980px;margin:auto;padding:max(28px,calc(env(safe-area-inset-top) + 12px)) 16px max(70px,calc(env(safe-area-inset-bottom) + 40px))}header{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px}.eyebrow{font-size:11px;font-weight:900;letter-spacing:1.6px;color:var(--lime)}h1{font-size:32px;letter-spacing:-1.2px;margin:4px 0}.btn{border:1px solid var(--line);background:var(--card);color:var(--text);padding:10px 13px;border-radius:11px;cursor:pointer}.btn:hover{background:var(--card2)}.hero{border:1px solid var(--line);border-radius:26px;padding:24px;background:linear-gradient(135deg,#23282d,#15171c);display:grid;grid-template-columns:1.5fr .6fr;gap:18px;overflow:hidden}.muted{font-size:11px;color:var(--muted);text-transform:uppercase;letter-spacing:1.1px}.hero h2{font-size:58px;line-height:.95;letter-spacing:-3px;margin:6px 0 12px}.hero p{margin:0;color:#bac0c9;font-size:14px}.hero-bar{height:10px;border-radius:99px;background:#30343d;overflow:hidden;margin-top:18px}.hero-bar i,.weight-bar i{display:block;height:100%;background:var(--lime);border-radius:99px;transition:.25s}.hero-meta{color:var(--muted);font-size:12px;margin-top:8px}.ring{width:145px;height:145px;border-radius:50%;align-self:center;justify-self:end;display:grid;place-items:center;background:conic-gradient(var(--lime) var(--pct),#30343d 0);position:relative}.ring:after{content:"";position:absolute;inset:11px;border-radius:50%;background:#181a1f}.ring b{position:relative;z-index:1;font-size:28px}.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:10px}.card{border:1px solid var(--line);background:var(--card);border-radius:17px;padding:16px}.big{font-size:24px;font-weight:850;margin-top:5px}.small{font-size:12px;color:var(--muted);margin-top:4px}section{margin-top:24px}section h3{font-size:17px;margin:0 0 11px}.habit-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:9px}.habit{border:1px solid var(--line);background:var(--card);border-radius:16px;padding:14px;display:flex;align-items:center;gap:11px;cursor:pointer}.habit.done{background:#182116;border-color:#425c2c}.check{width:27px;height:27px;border:2px solid #555b67;border-radius:9px;display:grid;place-items:center;flex:none}.done .check{background:var(--lime);border-color:var(--lime);color:#10130c;font-weight:900}.habit strong{font-size:14px}.habit small{display:block;color:var(--muted);font-size:11px;margin-top:2px}.entry{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.field{border:1px solid var(--line);background:var(--card);border-radius:15px;padding:12px}.field label{display:block;color:var(--muted);font-size:10px;text-transform:uppercase;letter-spacing:1px;margin-bottom:6px}.field input{width:100%;border:0;outline:0;background:transparent;color:var(--text);font-size:20px;font-weight:750}.save-note{margin-top:9px;font-size:11px;color:var(--muted)}.weight-layout{display:grid;grid-template-columns:1fr 1fr;gap:10px}.weight-input{display:flex;align-items:baseline;gap:6px}.weight-input input{font-size:32px;font-weight:850;width:115px;color:var(--text);background:transparent;border:0;outline:0}.weight-bar{height:9px;background:#30343d;border-radius:99px;overflow:hidden;margin-top:14px}.week{display:grid;grid-template-columns:repeat(7,1fr);gap:7px}.daycard{padding:11px 6px;text-align:center;border-radius:13px;border:1px solid var(--line);background:var(--card)}.daycard b{display:block;color:var(--muted);font-size:10px;margin-bottom:4px}.daycard span{font-size:11px}.fun{border-color:#5b4426;background:#211b14}.heat{display:grid;grid-template-columns:repeat(15,1fr);gap:5px}.cell{aspect-ratio:1;border-radius:5px;background:#292d36;color:#717784;font-size:9px;display:grid;place-items:center;cursor:pointer}.cell.on{background:var(--lime);color:#111}.cell.now{outline:2px solid var(--blue);outline-offset:1px}.bottom{text-align:center;color:#747a87;font-size:12px;margin-top:28px}.tools{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.status{font-size:12px;color:var(--lime);margin-top:8px;min-height:16px}@media(max-width:760px){.hero{grid-template-columns:1fr}.ring{justify-self:start;width:112px;height:112px}.hero h2{font-size:46px}.stats{grid-template-columns:1fr 1fr}.stats .card:last-child{grid-column:span 2}.habit-grid{grid-template-columns:1fr 1fr}.entry{grid-template-columns:1fr 1fr}.week{grid-template-columns:repeat(4,1fr)}.heat{grid-template-columns:repeat(10,1fr)}}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><div><div class="eyebrow">THE RESET</div><h1>90 Day Reset 🔥</h1></div><button class="btn" id="resetBtn">Reset</button></header>
+
+<div class="hero"><div><div class="muted">TODAY</div><h2 id="dayLabel">Day 1</h2><p id="message">Win today. Then win tomorrow. Stack 90 days.</p><div class="hero-bar"><i id="dayProgress"></i></div><div class="hero-meta" id="dayMeta"></div></div><div class="ring" id="ring"><b id="habitPct">0%</b></div></div>
+
+<div class="stats">
+<div class="card"><div class="muted">Starting</div><div class="big">115 kg</div><div class="small">Day 0</div></div>
+<div class="card"><div class="muted">30-Day Target</div><div class="big">106 kg</div><div class="small" id="to106"></div></div>
+<div class="card"><div class="muted">Final Target</div><div class="big">90 kg</div><div class="small" id="to90"></div></div>
+</div>
+
+<section><h3>Today's wins</h3><div class="habit-grid" id="habitGrid"></div></section>
+
+<section><h3>Daily numbers</h3><div class="entry">
+<div class="field"><label>Calories</label><input id="calories" type="number" min="0" placeholder="—"></div>
+<div class="field"><label>Protein (g)</label><input id="protein" type="number" min="0" placeholder="—"></div>
+<div class="field"><label>Steps</label><input id="steps" type="number" min="0" placeholder="—"></div>
+<div class="field"><label>Cigarettes</label><input id="cigarettes" type="number" min="0" placeholder="0"></div>
+</div><div class="tools"><button class="btn" id="saveDayBtn">Save today's data</button><button class="btn" id="backupBtn">Backup data</button><label class="btn" style="cursor:pointer">Restore backup<input id="restoreInput" type="file" accept="application/json" style="display:none"></label></div><div class="status" id="saveStatus"></div></section>
+
+<section><div class="weight-layout"><div class="card"><div class="muted">Current weight</div><div class="weight-input"><input id="weightInput" type="number" step="0.1" min="1"> <span>kg</span></div><div class="small">Update on weigh-in days.</div></div><div class="card"><div class="muted">Progress to 90 kg</div><div class="big" id="lostLabel">0.0 kg lost</div><div class="weight-bar"><i id="weightProgress"></i></div><div class="small">115 → 90 kg</div></div></div></section>
+
+<section><h3>Weekly rhythm</h3><div class="week"><div class="daycard"><b>MON</b><span>🏋️ Workout</span></div><div class="daycard"><b>TUE</b><span>🚶 Move</span></div><div class="daycard"><b>WED</b><span>🏋️ Workout</span></div><div class="daycard"><b>THU</b><span>🚶 Move</span></div><div class="daycard"><b>FRI</b><span>🏋️ Workout</span></div><div class="daycard fun"><b>SAT</b><span>🎉 Fun</span></div><div class="daycard fun"><b>SUN</b><span>🌿 Reset</span></div></div></section>
+
+<section><h3>90-day streak</h3><div class="heat" id="heatGrid"></div><div class="small">Tap a day to mark it complete. The blue outline is today.</div></section>
+<div class="bottom">DISCIPLINE &gt; PERFECTION · CONSISTENCY &gt; PUNISHMENT</div>
+</div>
+<script>
+(function(){
+'use strict';
+const KEY='reset90-dashboard-v3';
+const HABITS=[['food','🍽️','Diet logged','Calories + macros'],['steps','🚶','5k+ steps','Keep moving'],['workout','🏋️','Workout','3× this week'],['smoke','🚭','0 cigarettes','Protect the streak'],['water','💧','Water','Stay hydrated'],['sleep','😴','Sleep','Recover properly']];
+const $=id=>document.getElementById(id);
+function todayISO(){const d=new Date();const p=n=>String(n).padStart(2,'0');return d.getFullYear()+'-'+p(d.getMonth()+1)+'-'+p(d.getDate())}
+function blankState(){return{start:todayISO(),weight:115,days:{},daily:{}}}
+function load(){try{const raw=localStorage.getItem(KEY);if(raw){const x=JSON.parse(raw);return {...blankState(),...x}}}catch(e){}return blankState()}
+let state=load();
+function save(){try{localStorage.setItem(KEY,JSON.stringify(state));showStatus('Saved locally ✓')}catch(e){showStatus('Browser storage is unavailable — use Backup data.','red')}}
+function showStatus(msg,color){const el=$('saveStatus');el.textContent=msg;el.style.color=color==='red'?'var(--red)':'var(--lime)';clearTimeout(showStatus.t);showStatus.t=setTimeout(()=>el.textContent='',1800)}
+function dayNumber(){const a=new Date(state.start+'T00:00:00');const b=new Date();b.setHours(0,0,0,0);return Math.min(90,Math.max(1,Math.round((b-a)/86400000)+1))}
+function dayData(){const d=dayNumber();state.daily[d]??={habits:{},calories:'',protein:'',steps:'',cigarettes:''};return state.daily[d]}
+function render(){const d=dayNumber(),data=dayData(),hs=data.habits||{},done=HABITS.filter(h=>hs[h[0]]).length,p=Math.round(done/HABITS.length*100);
+$('dayLabel').textContent='Day '+d;$('dayMeta').textContent=(90-d)+' days remaining · '+done+'/6 wins today';$('habitPct').textContent=p+'%';$('ring').style.setProperty('--pct',p+'%');$('dayProgress').style.width=(d/90*100)+'%';
+const msgs=['Win today. Then win tomorrow. Stack 90 days.','Small wins count. Stack them.','Keep the promise you made to yourself.','You showed up. That is the habit.','No punishment. Just the next good decision.'];$('message').textContent=msgs[(d-1)%msgs.length];
+$('to106').textContent=Math.max(0,state.weight-106).toFixed(1)+' kg to 106';$('to90').textContent=Math.max(0,state.weight-90).toFixed(1)+' kg to 90';$('weightInput').value=state.weight;const lost=Math.max(0,115-state.weight);$('lostLabel').textContent=lost.toFixed(1)+' kg lost';$('weightProgress').style.width=Math.min(100,lost/25*100)+'%';
+['calories','protein','steps','cigarettes'].forEach(k=>$(k).value=data[k]??'');
+const hg=$('habitGrid');hg.innerHTML='';HABITS.forEach(h=>{const on=!!hs[h[0]],e=document.createElement('div');e.className='habit'+(on?' done':'');e.innerHTML='<div class="check">'+(on?'✓':'')+'</div><div><strong>'+h[1]+' '+h[2]+'</strong><small>'+h[3]+'</small></div>';e.addEventListener('click',()=>{dayData().habits[h[0]]=!dayData().habits[h[0]];save();render()});hg.appendChild(e)});
+const grid=$('heatGrid');grid.innerHTML='';for(let i=1;i<=90;i++){const e=document.createElement('div');e.className='cell'+(state.days[i]?' on ':'')+(i===d?' now':'');e.textContent=i;e.title='Day '+i;e.addEventListener('click',()=>{state.days[i]=!state.days[i];save();render()});grid.appendChild(e)}}
+['calories','protein','steps','cigarettes'].forEach(k=>$(k).addEventListener('input',()=>{dayData()[k]=$(k).value;save()}));
+$('saveDayBtn').addEventListener('click',()=>{const d=dayData();const steps=Number(d.steps||0),cigs=Number(d.cigarettes||0);if(steps>=5000)d.habits.steps=true;if(cigs===0)d.habits.smoke=true;save();render()});
+$('weightInput').addEventListener('change',e=>{const v=Number(e.target.value);if(v>0){state.weight=v;save();render()}});
+$('backupBtn').addEventListener('click',()=>{const blob=new Blob([JSON.stringify(state,null,2)],{type:'application/json'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='90-day-reset-backup.json';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),500);showStatus('Backup downloaded ✓')});
+$('restoreInput').addEventListener('change',e=>{const file=e.target.files[0];if(!file)return;const r=new FileReader();r.onload=()=>{try{const x=JSON.parse(r.result);if(!x.daily||!x.days)throw Error();state={...blankState(),...x};save();render();showStatus('Backup restored ✓')}catch(err){showStatus('Invalid backup file','red')}};r.readAsText(file)});
+$('resetBtn').addEventListener('click',()=>{if(confirm('Start a fresh 90-day reset from today?')){state=blankState();save();render()}});
+document.addEventListener('visibilitychange',()=>{if(!document.hidden)render()});
+render();
+if('serviceWorker' in navigator){window.addEventListener('load',()=>{navigator.serviceWorker.register('sw.js').catch(()=>{})})}
+})();
+</script>
+</body></html>
